@@ -70,6 +70,7 @@ const setMessage = (param) => {
 }
 
 againBtn.addEventListener('click', (event) => {
+	chkBtn.setAttribute('enabled', true);
 	guessInput.value = "";
 	setMessage('Start guessing...')
 	document.querySelector('.score').textContent = 20;
